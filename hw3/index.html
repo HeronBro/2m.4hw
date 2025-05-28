@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auth-form">
+        <h1 class="auth-form__title">Создать аккаунт</h1>
+
+        <form>
+            <div class="auth-form__group">
+                <label for="email" class="auth-form__label">Email</label>
+                <input type="email" id="email" class="auth-form__input" required>
+            </div>
+
+            <div class="auth-form__name-fields">
+                <div class="auth-form__group">
+                    <label for="first-name" class="auth-form__label">Имя</label>
+                    <input type="text" id="first-name" class="auth-form__input" required>
+                </div>
+                <div class="auth-form__group">
+                    <label for="last-name" class="auth-form__label">Фамилия</label>
+                    <input type="text" id="last-name" class="auth-form__input" required>
+                </div>
+            </div>
+
+            <div class="auth-form__group">
+                <label for="password" class="auth-form__label">Пароль</label>
+                <input type="password" id="password" class="auth-form__input" required>
+            </div>
+
+            <div class="auth-form__group">
+                <label for="wallet" class="auth-form__label">Адрес кошелька</label>
+                <input type="text" id="wallet" class="auth-form__input" required>
+            </div>
+
+            <div class="auth-form__checkbox-group">
+                <input type="checkbox" id="terms" class="auth-form__checkbox" required>
+                <label for="terms" class="auth-form__label">Я принимаю Условия предоставления услуг и Политику конфиденциальности</label>
+            </div>
+
+            <button type="submit" class="auth-form__submit">Зарегистрироваться</button>
+        </form>
+    </div>
+</body>
+</html>
